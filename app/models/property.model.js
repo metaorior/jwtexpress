@@ -1,16 +1,16 @@
 module.exports = (sequelize, Sequelize) => {
     const Property = sequelize.define("properties", {
             ownerID: {
-                type: Sequelize.INTEGER
+                type: Sequelize.INTEGER,
             },
         heroName: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING,
             },
             hero_stats: {
-            type: Sequelize.JSON
+            type: Sequelize.JSON,
             },
             game_token: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING,
             },            
             timestamps: false
             });

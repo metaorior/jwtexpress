@@ -1,3 +1,3 @@
 module.exports = {
-    secret: "BILBOARD-JS*&&*383"
-  };
+  secret: "briri3&*&*#n3y"
+};

@@ -1,18 +1,13 @@
 module.exports = (sequelize, Sequelize) => {
-    const User = sequelize.define("users", {
-      id: {
-        type: Sequelize.INTEGER
-      },
-        username: {
-        type: Sequelize.STRING
-      },     
-      password: {
-        type: Sequelize.STRING
-      },
-      game_token: {
-          type: Sequelize.STRING
-      },
+  const Role = sequelize.define("roles", {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true
+    },
+    name: {
+      type: Sequelize.STRING
+    }
+  });
 
-    });
-    return User;
-  };
+  return Role;
+};
