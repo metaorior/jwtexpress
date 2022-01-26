@@ -12,7 +12,7 @@ exports.signup = (req, res) => {
   // Save User to Database
   User.create({
     username: req.body.username,
-    email: req.body.email,
+    game_token:  req.session.id.slice(10, 16) + "googleclou",
     password: bcrypt.hashSync(req.body.password, 8)
   })
     .then(user => {
